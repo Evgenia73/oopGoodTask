@@ -22,6 +22,10 @@ public class Main {
      */
     public static void moveTo(Person person, Position destination) {
         // TODO
+        Transport car = new Car();
+        car.roadTo(destination, person);
+        if (person.getPosition() != destination)
+            person.walk(destination);
         assert person.getPosition() == destination;
     }
 }
