@@ -1,5 +1,5 @@
 package ru.oop;
 
-public interface Transport {
+public interface Transport extends Positioned{
     public void roadTo(Position destination, Person person);
 }
